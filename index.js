@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
 });
 */
 
-app.use(cors);
+app.use(cors());
 
 app.use(morgan('combined'));
 app.use(bodyParser.json({type: '*/*'}));
